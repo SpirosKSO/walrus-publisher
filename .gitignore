@@ -1,4 +1,5 @@
 .env
 .env.*
 *.log
+sui.keystore
 # NOTE: We're committing sui.keystore for now - move to env vars/secrets for production!
