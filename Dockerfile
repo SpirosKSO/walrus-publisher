@@ -1,5 +1,5 @@
 # Walrus Publisher for Sui Mainnet
-FROM ghcr.io/railwayapp/nixpacks:ubuntu-1704844318
+FROM debian:bookworm-slim
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
