@@ -7,9 +7,9 @@ RUN apt-get update && apt-get install -y \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-# Download Walrus binary
+# Download Walrus binary for mainnet
 RUN curl -L -o /usr/local/bin/walrus \
-    https://storage.googleapis.com/mysten-walrus-binaries/walrus-latest-ubuntu-x86_64 \
+    https://storage.googleapis.com/mysten-walrus-binaries/walrus-mainnet-latest-ubuntu-x86_64 \
     && chmod +x /usr/local/bin/walrus
 
 # Create config directories
