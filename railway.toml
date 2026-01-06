@@ -4,5 +4,7 @@ dockerfilePath = "Dockerfile"
 
 [deploy]
 startCommand = "/start.sh"
+healthcheckPath = "/pod_health"
+healthcheckTimeout = 120
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 3
