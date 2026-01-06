@@ -1,5 +1,5 @@
 # Walrus Publisher for Sui Mainnet
-FROM ubuntu:22.04
+FROM ghcr.io/railwayapp/nixpacks:ubuntu-1704844318
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
@@ -21,9 +21,5 @@ RUN chmod +x /start.sh
 
 # Expose publisher port
 EXPOSE 31416
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:31416/v1/status || exit 1
 
 CMD ["/start.sh"]
