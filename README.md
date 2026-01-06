@@ -33,3 +33,4 @@ Update your Vercel backend:
 ```
 WALRUS_PUBLISHER_URL=https://your-app.railway.app
 ```
+# Funded with WAL
